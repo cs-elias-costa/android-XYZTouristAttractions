@@ -9,6 +9,6 @@ test:
         background: true
         parallel: true
     - circle-android wait-for-boot
- post:
+  post:
     - mv Application/build/outputs/apk/*.apk $CIRCLE_ARTIFACTS/
     - mv Wearable/build/outputs/apk/*.apk $CIRCLE_ARTIFACTS/
